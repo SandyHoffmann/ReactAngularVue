@@ -1,0 +1,139 @@
+.Conteudo{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.bodyCRUD{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f5f5f5;
+
+}
+
+
+.contato{
+    flex:1;
+    flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 40px 15px 40px 15px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  background-color: #fff;
+  
+}
+
+.naveContatos{
+    padding-right: 45px;
+    padding-left: 45px;
+    background-color: #fff;
+
+    box-shadow:   0 0 10px 0 rgba(0,0,0,0.2);
+}
+.headerContatos{
+    padding-right: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.headerContatos h1{
+    margin-right: 30px;
+    font-size: 35px;
+}
+
+.contato p {
+    margin: 0;
+}
+
+.imgContato{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: bisque;
+    background-image: url("./static/userIcon.png");
+    background-size: cover;
+}
+
+.divBotoes{
+    padding: 15px;
+
+}
+
+.botao{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.add{
+    background-color: #4CAF50;
+}
+
+.remover{
+    background-color: #f44336;
+}
+
+.editar{
+    background-color: #2196F3;
+
+}
+
+.modal{
+    z-index: 2;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.modal .xFechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.modal .tituloModal{
+    text-align: center;
+    font-size: 35px;
+}
+
+.modal .subtituloModal{
+    text-align: center;
+    font-size: 25px;
+}
+
+.modal .selectModalQtd{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.modalBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+

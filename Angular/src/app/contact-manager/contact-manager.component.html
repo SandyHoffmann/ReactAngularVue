@@ -1,0 +1,40 @@
+<div>
+    <div class="naveContatos">
+        <div class="headerContatos">
+            <h1>Lista de Contatos</h1>
+            <div class="divBotoes">
+                <button class="botao add" (click)="this.modalAdd=true">Adicionar</button>
+                <button class="botao remover" (click)="deletarContato()">Remover</button>
+                <button class="botao editar">Editar</button>
+            </div>
+        </div>
+    </div>
+    <div class="Conteudo">
+        <app-contatos [contatos]="contatos" class="app-contatos-style"></app-contatos>
+    </div>
+        <div class="modalBg" *ngIf="modalAdd">
+            <div class="modal modalComprasAdd">
+                <div class="modalFechar">
+                    <span (click)="this.modalAdd=false" class="xFechar">X</span>
+                </div>
+                <div class="modalConteudo">
+                    <h1 class="tituloModal">Adicionar Novos Contatos</h1>
+                    <hr />
+                    <h2 class="subtituloModal">Adicionar quantos novos contatos?</h2>
+                    <select class="selectModalQtd" #quantidade (change)="setQtdDadosAdd(quantidade.value)">
+                      <option value="1">1</option>
+                      <option value="10">10</option>
+                      <option value="100">100</option>
+                      <option value="1000">1000</option>
+                      <option value="10000">10000</option>
+                      <option value="100000">100000</option>
+                      <option value="1000000">1000000</option>
+                    </select>
+                  </div>
+                  <div class="modalFooter">
+                    <button class="botao add" (click)="adicionarContato()">
+                      Adicionar
+                    </button>
+                  </div>
+        </div>
+</div>

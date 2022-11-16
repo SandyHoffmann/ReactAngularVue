@@ -1,0 +1,36 @@
+.contato {
+    flex: 1;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 40px 15px 40px 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  .imgContato {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: bisque;
+    background-image: url("../static/userIcon.png");
+    background-size: cover;
+  }
+  .contato p {
+    margin: 0;
+  }
+  .app-contatos{
+    background-color: red;
+  }
+
+.Conteudo{
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }

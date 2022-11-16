@@ -1,0 +1,12 @@
+<div class="Conteudo">
+    <div *ngFor="let contato of contatos" id={{contato.id}} class="contato" >
+        <div>
+            <div class='imgContato' ></div>
+
+        </div>
+        <h3>{{contato.nome}}</h3>
+        <p>telefone: {{contato.telefone}}</p>
+        <p>email: {{contato.email}}</p>
+    </div>
+</div>
+
